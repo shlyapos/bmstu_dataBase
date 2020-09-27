@@ -13,9 +13,9 @@ DROP TABLE IF EXISTS text_to_post CASCADE;
 
 CREATE TABLE IF NOT EXISTS account (
 	account_id 	SERIAL 		NOT NULL PRIMARY KEY,
-	login 		VARCHAR(32)	NOT NULL,
-	email 		VARCHAR(64)	NOT NULL,
-	salt 		CHAR(32)	NOT NULL,
+	login 		VARCHAR(32)	NOT NULL UNIQUE,
+	email 		VARCHAR(64)	NOT NULL UNIQUE,
+	salt 		CHAR(32)	NOT NULL UNIQUE,
 	hash		CHAR(64)	NOT NULL
 );
 
@@ -26,7 +26,7 @@ CREATE TABLE IF NOT EXISTS post_text (
 
 CREATE TABLE IF NOT EXISTS picture (
 	picture_id 		SERIAL 		NOT NULL PRIMARY KEY,
-	picture_path	VARCHAR(64)
+	picture_path	VARCHAR(64) UNIQUE
 );
 
 CREATE TABLE IF NOT EXISTS tag (
@@ -47,7 +47,8 @@ CREATE TABLE IF NOT EXISTS review (
 	author_id 	INTEGER NOT NULL REFERENCES account(account_id),
 	review_data	TEXT	NOT NULL,
 	rating		INTEGER	NOT NULL,
-	public_date DATE	NOT NULL
+	public_date DATE	NOT NULL,
+	CONSTRAINT valid_rating CHECK (rating > 0 AND rating < 11)
 );
 
 --Связующие таблицы для картинок

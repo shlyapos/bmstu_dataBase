@@ -6,6 +6,7 @@ maxn = 1000
 faker = Faker()
 sourcePath = "./source"
 
+
 def passwordGenerator():
     global faker
 
@@ -21,10 +22,23 @@ def accountGenerator():
     filePath = sourcePath + "/account.csv"
     f = open(filePath, 'w')
 
+    emailArray = []
+    loginArray = []
+
     for i in range(maxn):
         salt, hashPassword = passwordGenerator()
+        
+        email = faker.ascii_free_email()
+        while (email in emailArray):
+            email = faker.ascii_free_email()
+        emailArray.append(email)
 
-        row = "{0},{1},{2},{3}\n".format(faker.user_name(), faker.ascii_free_email(), salt, hashPassword.hexdigest())
+        login = faker.user_name()
+        while (login in loginArray):
+            login = faker.user_name()
+        loginArray.append(login)
+
+        row = "{0},{1},{2},{3}\n".format(login, email, salt, hashPassword.hexdigest())
         f.write(row)
     
     f.close()
