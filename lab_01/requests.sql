@@ -98,10 +98,10 @@ FROM 'C:\Repositories\bmstu_dataBase\lab_01\source\review.csv' 		WITH (FORMAT cs
 COPY tag_to_picture(tag_id, picture_id)
 FROM 'C:\Repositories\bmstu_dataBase\lab_01\source\tag_to_picture.csv' WITH (FORMAT csv);
 COPY picture_to_post(post_id, picture_id)
-FROM 'C:\Repositories\bmstu_dataBase\lab_01\source\tag_to_picture.csv' WITH (FORMAT csv);
+FROM 'C:\Repositories\bmstu_dataBase\lab_01\source\picture_to_post.csv' WITH (FORMAT csv);
 
 -- Для текста
 COPY tag_to_text(tag_id, text_id)
-FROM 'C:\Repositories\bmstu_dataBase\lab_01\source\tag_to_picture.csv' WITH (FORMAT csv);
+FROM 'C:\Repositories\bmstu_dataBase\lab_01\source\tag_to_text.csv' WITH (FORMAT csv);
 COPY text_to_post(post_id, text_id)
-FROM 'C:\Repositories\bmstu_dataBase\lab_01\source\tag_to_picture.csv' WITH (FORMAT csv);
+FROM 'C:\Repositories\bmstu_dataBase\lab_01\source\text_to_post.csv' WITH (FORMAT csv);
