@@ -19,6 +19,8 @@ Bauman Moscow State Technical University
 >
 > [Файлы](https://github.com/shlyapos/bmstu_dataBase/tree/master/lab_01)
  
+ ___
+ 
 > :fire: **#2 Лабораторная работа**
 >
 > Составить 30 разнообразнейших запросов к своей базе данных (25 select'ов, ого!)
