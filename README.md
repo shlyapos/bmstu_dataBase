@@ -21,8 +21,15 @@ Bauman Moscow State Technical University
  
  ___
  
-> :fire: **#2 Лабораторная работа**
+> :white_check_mark: **#2 Лабораторная работа**
 >
 > Составить 30 разнообразнейших запросов к своей базе данных (25 select'ов, ого!)
 >
 > [Файлы](https://github.com/shlyapos/bmstu_dataBase/tree/master/lab_02)
+___
+
+> :white_check_mark: **#2 Лабораторная работа**
+>
+> Составить функции, процедуры и триггеры
+>
+> [Файлы](https://github.com/shlyapos/bmstu_dataBase/tree/master/lab_03)
