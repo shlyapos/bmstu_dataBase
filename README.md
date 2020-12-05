@@ -5,7 +5,7 @@
 Bauman Moscow State Technical University
 ```
 
-> **#1 Лабораторная работа**
+> :white_check_mark: **#1 Лабораторная работа**
 >
 > 1. Выбрать тему;
 > 2. Составить ER-модель картинкой;
@@ -17,5 +17,12 @@ Bauman Moscow State Technical University
 >
 > 4. Наполнить >= 1000.
 >
-> [Файлы](https://github.com/shlyapik228/bmstu_dataBase/tree/master/lab_01)
+> [Файлы](https://github.com/shlyapos/bmstu_dataBase/tree/master/lab_01)
  
+ ___
+ 
+> :fire: **#2 Лабораторная работа**
+>
+> Составить 30 разнообразнейших запросов к своей базе данных (25 select'ов, ого!)
+>
+> [Файлы](https://github.com/shlyapos/bmstu_dataBase/tree/master/lab_02)
