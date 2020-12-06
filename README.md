@@ -18,11 +18,23 @@ Bauman Moscow State Technical University
 > 4. Наполнить >= 1000.
 >
 > [Файлы](https://github.com/shlyapos/bmstu_dataBase/tree/master/lab_01)
+>
+> [Задания](https://github.com/shlyapos/bmstu_dataBase/tree/master/lab_01/lab_01_tasks.pdf)
+___
  
- ___
- 
-> :fire: **#2 Лабораторная работа**
+> :white_check_mark: **#2 Лабораторная работа**
 >
 > Составить 30 разнообразнейших запросов к своей базе данных (25 select'ов, ого!)
 >
 > [Файлы](https://github.com/shlyapos/bmstu_dataBase/tree/master/lab_02)
+>
+> [Задания](https://github.com/shlyapos/bmstu_dataBase/tree/master/lab_02/lab_02_tasks.pdf)
+___
+
+> :white_check_mark: **#3 Лабораторная работа**
+>
+> Составить функции, процедуры и триггеры
+>
+> [Файлы](https://github.com/shlyapos/bmstu_dataBase/tree/master/lab_03)
+>
+> [Задания](https://github.com/shlyapos/bmstu_dataBase/tree/master/lab_03/lab_03_tasks.pdf)
