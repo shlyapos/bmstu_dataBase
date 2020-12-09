@@ -10,6 +10,12 @@ class DataBase:
         self.cursor.close()
         self.connect.close()
 
+    
+    def __new__(cls):
+        if not hasattr(cls, 'instance'):
+            cls.instance = super(DataBase, cls).__new__(cls)
+        return cls.instance
+
 
     def printQuery(self):
         queryData = self.cursor.fetchall()
