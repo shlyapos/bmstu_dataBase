@@ -34,7 +34,7 @@ SELECT table1.id, var1, var2,
 		ELSE table2.date_to
 	END AS date_to
 FROM table1 
-JOIN table2 
+FULL JOIN table2 
 ON table1.id = table2.id AND
 (
 	table2.date_from BETWEEN table1.date_from AND table1.date_to
