@@ -16,7 +16,7 @@ ALTER TABLE post_copy ADD COLUMN data_json JSON;
 DROP TABLE post_json;
 
 CREATE TEMP TABLE post_json(id SERIAL, doc JSON);
-COPY post_json(doc) FROM 'C:\Repositories\bmstu_dataBase\lab_05\json_src\data_task3.json';
+COPY post_json(doc) FROM 'C:\Repositories\bmstu_dataBase\lab_05\json_src\data_task3-4.json';
 
 
 -- Добавление столбца в таблицу
